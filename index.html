@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>GOAT</title>
+	<meta name="description"
+		content="GOATは、アパレル・古着販売向けに撮影・採寸・出品代行・梱包・保管・発送までを一気通貫で支援するEC運営・物流サービスです。撮影パックや発送代行プランも用意し、EC運営の手間を大幅に削減します。">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;700&display=swap"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+	<!-- OGP（SNS表示用） -->
+	<meta property="og:title" content="GOAT｜EC向け一気通貫物流サービス">
+	<meta property="og:description" content="撮影・採寸・梱包・保管・発送まで対応。EC運営を丸ごとサポート。">
+	<meta property="og:image" content="https://marais.co.jp/img/ogp.png">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marais.co.jp/">
+
+
+
+
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="header-inner">
+			<h1 class="logo">
+				<a href="https://marais.co.jp/">
+					<img src="img/logo.png" alt="GOAT">
+				</a>
+			</h1>
+
+			<!-- チェックボックス -->
+			<input type="checkbox" id="menu-toggle" />
+			<label for="menu-toggle" class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<nav>
+				<ul class="navi">
+					<li><a href="index.html#about">about</a></li>
+					<li><a href="index.html#services">services</a></li>
+					<li><a href="#company">company</a></li>
+					<li><a href="https://marais.co.jp/contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="mainvisual swiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-image: url('img/mainvisual1.jpg');">
+				<div class="mv-inner">
+					<h2 class="mv-catch">
+						撮影・採寸・梱包・保管・発送<br>
+						一気通貫の物流サービス
+					</h2>
+					<p class="mv-sub">商品の魅力を最大限に引き出し、最短でお客様へ。</p>
+					<a href="#contact" class="mv-btn">お問い合わせ</a>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('img/mainvisual2.jpg');">
+				<div class="mv-inner">
+					<h2 class="mv-catch">
+						物流をもっとスムーズに<br>
+						高品質なサービスを提供
+					</h2>
+					<p class="mv-sub">効率的にお客様に商品を届けます。</p>
+					<a href="#contact" class="mv-btn">お問い合わせ</a>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('img/mainvisual3.jpg');">
+				<div class="mv-inner">
+					<h2 class="mv-catch">
+						撮影・採寸・梱包・保管・発送<br>
+						一気通貫の物流サービス
+					</h2>
+					<p class="mv-sub">商品の魅力を最大限に引き出し、最短でお客様へ。</p>
+					<a href="#contact" class="mv-btn">お問い合わせ</a>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('img/mainvisual4.jpg');">
+				<div class="mv-inner">
+					<h2 class="mv-catch">
+						物流をもっとスムーズに<br>
+						高品質なサービスを提供
+					</h2>
+					<p class="mv-sub">効率的にお客様に商品を届けます。</p>
+					<a href="#contact" class="mv-btn">お問い合わせ</a>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background-image: url('img/mainvisual5.jpg');">
+				<div class="mv-inner">
+					<h2 class="mv-catch">
+						撮影・採寸・梱包・保管・発送<br>
+						一気通貫の物流サービス
+					</h2>
+					<p class="mv-sub">商品の魅力を最大限に引き出し、最短でお客様へ。</p>
+					<a href="#contact" class="mv-btn">お問い合わせ</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- ページネーション -->
+		<div class="swiper-pagination"></div>
+		<!-- ナビボタン -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</section>
+
+
+	<main class="wrapper">
+		<section class="introduction popup is-animated">
+			<p class="chatchprase">撮影・採寸・梱包・保管・出品・発送、すべてお任せ。</p>
+			<p class="text">
+				あなたの商品を、あなたの想いそのままに。<br>
+				EC運営に必要な作業をワンストップでサポートします。<br>
+				面倒な作業はまるごと任せて、あなたは“届けたい気持ち”に集中できます。<br>
+				安心して任せられる、もう一人のスタッフのようなパートナーサービスです。
+			</p>
+		</section>
+
+		<section id="about">
+			<div class="img popup is-animated">
+				<img src="img/about.jpg" alt="職場風景">
+			</div>
+			<div class="detail popup is-animated">
+				<h2 class="section-title">
+					<span class="en">About</span>
+					<span class="ja">私たちについて</span>
+				</h2>
+				<p>私たちは「だれもが安心してECを運営できる環境」を届けたいという想いから、<br>
+					商品撮影・採寸・梱包・保管・出品・発送までを一括で行うフルフィルメントサービスを提供しています。<br>
+					経験豊富なスタッフが、一点一点を丁寧に扱い、あなたの商品が最高の状態でお客様へ届くようサポートいたします。
+				</p>
+			</div>
+		</section>
+		<div class="bmg text-white">
+			<section id="services">
+				<h2 class="section-title popup is-animated">
+					<span class="en">Services</span>
+					<span class="ja">サービス内容</span>
+				</h2>
+				<ul class="works-list">
+					<li class="popup is-animated">
+						<img src="img/services-satuei.jpg" alt="撮影">
+						<h3>撮影</h3>
+						<p>商品を魅力的に見せる撮影をワンストップで対応します。</p>
+					</li>
+					<li class="popup is-animated">
+						<img src="img/service-saisunn.jpg" alt="採寸">
+						<h3>採寸</h3>
+						<p>アパレルに強い正確な採寸でサイズの不一致を防ぎます。</p>
+					</li>
+					<li class="popup is-animated">
+						<img src="img/service-konnpou.jpg" alt="梱包">
+						<h3>梱包</h3>
+						<p>商品の魅力を損なわない丁寧な梱包を行います。</p>
+					</li>
+					<li class="popup is-animated">
+						<img src="img/hokan.jpg" alt="保管">
+						<h3>保管</h3>
+						<p>倉庫で安全・効率的に保管し、在庫管理をサポートします。</p>
+					</li>
+					<li class="popup is-animated">
+						<img src="img/gokibou pratto.png" alt="出品">
+						<h3>出品</h3>
+						<p>お客様のご希望のプラットフォームに出品代行させていただきます。</p>
+					</li>
+					<li class="popup is-animated">
+						<img src="img/service-hassou.jpg" alt="発送">
+						<h3>発送</h3>
+						<p>注文から出荷までスムーズに対応し、最短でお客様へ届けます。</p>
+					</li>
+				</ul>
+			</section>
+			<section id="pricing" class="pricing">
+				<h2 class="section-title popup is-animated">
+					<span class="en">Pricing</span>
+					<span class="ja">料金体系</span>
+				</h2>
+
+				<div class="pricing-lead popup is-animated">
+					<p>入会金・基本料金・保管料・オプション料金のご案内です。<br>
+						最新の割引情報は「X（旧Twitter）」で随時お知らせしています。</p>
+				</div>
+
+				<div class="pricing-cards">
+
+
+					<!-- 通常プラン -->
+
+					<div class="pricing-card popup is-animated">
+						<h3 class="plan-name">入会金</h3>
+						<p class="plan-price">10000円 / 件→<span class="red">0円</span></p>
+						<ul class="plan-features">
+							<li class="red">ただいま入会金無料キャンペン中</li>
+						</ul>
+					</div>
+
+					<a href="fullservice.html" class="pricing-card popup is-animated">
+						<h3 class="plan-name">お任せフルパック</h3>
+						<p class="plan-price">950円 / 個</p>
+						<ul class="plan-features">
+							<li>撮影・採寸・出品・梱包・保管・発送までの基本料金</li>
+							<li>納期：商品到着から <br><strong>1週間以内</strong>（目安）</li>
+						</ul>
+					</a>
+
+
+					<a href="photopackage.html" class="pricing-card popup is-animated">
+						<h3 class="plan-name">撮影パック</h3>
+						<p class="plan-price">500円 / 個</p>
+						<ul class="plan-features">
+							<li>撮影・採寸・画像加工・撮影データ納品までの基本料金</li>
+							<li>納期：商品到着から <br><strong>1週間以内</strong>（目安）</li>
+						</ul>
+					</a>
+					<div class="pricing-card popup is-animated">
+						<h3 class="plan-name">撮影データ＋発送代行プラン</h3>
+						<p class="plan-price">800円 / 個</p>
+						<ul class="plan-features">
+							<li>撮影プラン＋発送までの基本料金</li>
+							<li>納期：商品到着から <br><strong>1週間以内</strong>（目安）</li>
+						</ul>
+					</div>
+
+
+					<!-- 保管料 -->
+					<div class="pricing-card popup is-animated">
+						<h3 class="plan-name">保管料</h3>
+						<p class="plan-price">100円 / 1品</p>
+						<ul class="plan-features">
+							<li>商品で1品。納品から1か月は無料です。</li>
+							<li>それ以降は月末締めで、商品数に応じて算出します。</li>
+						</ul>
+						<p class="plan-note">
+
+						</p>
+					</div>
+
+					<!-- その他プラン -->
+					<div class="pricing-card popup is-animated">
+						<h3 class="plan-name">保管＋発送プラン</h3>
+						<p class="plan-price">保管・発送のみ：500円 / 個</p>
+						<p class="plan-note">※ 弊社提携の配送業者特別料金での発送が可能です。</p>
+						<p class="plan-note">例：九州から関東６０サイズ発送料金→３９０円</p>
+
+						<details>
+							<summary>🚚 佐川公式 × 弊社料金 比較表（九州 → 関東）</summary>
+
+							<table>
+								<tr>
+									<th>サイズ</th>
+									<th>佐川公式料金</th>
+									<th>弊社料金</th>
+									<th>差額</th>
+								</tr>
+								<tr>
+									<td>80サイズ</td>
+									<td>約1,220円</td>
+									<td>460円</td>
+									<td class="red">-760円</td>
+								</tr>
+								<tr>
+									<td>100サイズ</td>
+									<td>約1,520円</td>
+									<td>570円</td>
+									<td class="red">-950円</td>
+								</tr>
+								<tr>
+									<td>120サイズ</td>
+									<td>（公式検索推奨）</td>
+									<td>770円</td>
+									<td class="red">大幅にお得</td>
+								</tr>
+								<tr>
+									<td>140サイズ</td>
+									<td>約2,180円</td>
+									<td>950円</td>
+									<td class="red">-1230円</td>
+								</tr>
+							</table>
+
+							<p style="padding: 12px 16px; margin:0; background:#fff;">
+								※ 公式料金は佐川急便の「送料検索」で最新の詳細をご確認ください。<br>
+								<a href="https://www2.sagawa-exp.co.jp/send/fare/input/" target="_blank">
+									→ 佐川急便 公式料金検索
+								</a>
+							</p>
+
+						</details>
+
+					</div>
+
+
+				</div>
+
+			</section>
+			<section id="flow">
+				<h2 class="section-title popup is-animated">
+					<span class="en">Service Packages</span>
+					<span class="ja">サービスパック</span>
+				</h2>
+
+
+				<article class="flow-cards">
+
+					<a href="fullservice.html" class="flow-card popup is-animated">
+						<div class="flow-number">1.</div>
+						<img src="img/full.jpg" alt="お任せパック">
+						<h3>お任せフルパック</h3>
+						<p>撮影・採寸・データ納品・下書き作成・出品代行・梱包・発送まで
+							すべてを一括でお任せいただけるプランです。</p>
+					</a>
+
+					<a href="photopackage.html" class="flow-card popup is-animated">
+						<div class="flow-number">2.</div>
+						<img src="img/services-satuei.jpg" alt="撮影パック">
+						<h3>撮影パック</h3>
+						<p>商品撮影・採寸・画像納品を行う基本プラン。
+							SNS販売〜フリマアプリまで幅広く対応しています。</p>
+					</a>
+
+				</article>
+
+			</section>
+			<section id="flow">
+				<h2 class="section-title popup is-animated">
+					<span class="en">Storage and Fulfillment Plan</span>
+					<span class="ja">保管＋発送プラン</span>
+				</h2>
+
+
+				<article class="flow-cards" id="storage">
+
+					<a href="#pricing" class="flow-card popup is-animated">
+						<div class="flow-number">3.</div>
+						<img src="img/hokannhassou.jpg" alt="保管＋発送プラン">
+						<h3>保管＋発送プラン</h3>
+						<p>商品の保管・発送を代行するプランで、撮影・出品代行・梱包は含まれません。</p>
+
+					</a>
+
+				</article>
+
+			</section>
+		</div>
+		<section class="introduction popup is-animated">
+			<p class="chatchprase">まずは一度ご連絡ください。</p>
+			<p class="text">
+				お客様の商品や販売スタイル、ご希望の作業範囲を伺い、<br>
+				EC運営に必要な作業をワンストップでサポートします。最適なサービスパックをご提案いたします。<br>
+				面倒な作業はまるごと任せて、あなたは“届けたい気持ち”に集中できます。<br>
+				必要な作業だけを選んで、無駄なく・スムーズにご利用いただけます。
+			</p>
+		</section>
+
+
+
+		<section id="faq">
+			<h2>よくある質問</h2>
+
+			<div class="faq-list popup is-animated">
+
+				<details class="faq-item">
+					<summary class="question"><span class="q-icon"></span>在庫管理や発送作業に手が回りません…</summary>
+					<p class="answer"><span class="a-icon"></span>まとめてお任せいただけます。一括サポートで効率化します。</p>
+				</details>
+
+				<details class="faq-item">
+					<summary class="question"><span class="q-icon"></span>撮影や採寸を外注に出すのが面倒…</summary>
+					<p class="answer"><span class="a-icon"></span>撮影〜採寸〜発送までワンストップで対応します。</p>
+				</details>
+
+				<details class="faq-item">
+					<summary class="question"><span class="q-icon"></span>品質が安定しないのが不安…</summary>
+					<p class="answer"><span class="a-icon"></span>統一した梱包基準で品質管理を徹底しています。</p>
+				</details>
+
+			</div>
+		</section>
+		<section id="voice" class="popup is-animated">
+			<h2>お客さまの声</h2>
+
+			<div class="voice-list">
+
+				<!-- ① SNS風カード -->
+				<div class="voice-card popup is-animated">
+					<div class="voice-header">
+						<div class="user-icon"></div>
+						<p class="user-name">EC販売者 Aさん</p>
+					</div>
+					<p class="voice-text">
+						撮影から発送まで全部お願いできて本当に助かっています！<br>
+						作業時間が減って売上に集中できるようになりました。
+					</p>
+				</div>
+
+				<!-- ② SNS風カード -->
+				<div class="voice-card popup is-animated">
+					<div class="voice-header">
+						<div class="user-icon"></div>
+						<p class="user-name">古着ショップ Bさん</p>
+					</div>
+					<p class="voice-text">
+						採寸がとにかく正確。購入者からの問い合わせも激減しました。<br>
+						梱包も丁寧なので安心して任せています！
+					</p>
+				</div>
+
+				<!-- ③ SNS風カード -->
+				<div class="voice-card popup is-animated">
+					<div class="voice-header">
+						<div class="user-icon"></div>
+						<p class="user-name">個人セラー Cさん</p>
+					</div>
+					<p class="voice-text">
+						LINEでやり取りできるのが便利すぎる！<br>
+						まるでスタッフが増えたみたいで心強いです。
+					</p>
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+		<section id="contact" class="contact-block">
+			<h2 class="section-title">
+				<span class="en">Contact</span>
+				<span class="ja">まずはご相談ください</span>
+			</h2>
+			<p>
+				GOATでは、撮影・採寸・梱包・保管・発送までの外注に関するご相談を随時受け付けています。<br>
+				「まずは話だけ聞きたい」という方も大歓迎です。お気軽にお問い合わせください。
+			</p>
+			<div class="contact-buttons">
+				<a href="tel:0922142786" class="btn">お電話はこちら</a>
+				<a href="https://marais.co.jp/contact" class="btn">お問い合わせフォーム</a>
+			</div>
+		</section>
+		<section id="company" class="company">
+			<h2 class="company-title popup is-animated">COMPANY</h2>
+			<p class="company-subtitle">会社概要</p>
+
+			<table class="company-table">
+				<tr>
+					<th>事業所名</th>
+					<td>就労継続支援A型事業所 GOAT</td>
+				</tr>
+				<tr>
+					<th>事業所番号</th>
+					<td>4010202622</td>
+				</tr>
+				<tr>
+					<th>法人名</th>
+					<td>Marais株式会社</td>
+				</tr>
+				<tr>
+					<th>設立</th>
+					<td>2025年4月7日</td>
+				</tr>
+				<tr>
+					<th>代表</th>
+					<td>永井 竜星</td>
+				</tr>
+				<tr>
+					<th>事業内容</th>
+					<td>就労継続支援A型事業（福祉サービス）</td>
+				</tr>
+				<tr>
+					<th>電話番号</th>
+					<td>092-214-2786</td>
+				</tr>
+				<tr>
+					<th>事業所所在地</th>
+					<td>福岡県福岡市東区原田4-25-1</td>
+				</tr>
+			</table>
+
+			<div class="company-map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.3061702919!2d130.43973917569824!3d33.62330257332158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35418fba1a5d7121%3A0x9a7670dffe4c45c9!2z44CSODEyLTAwNjMg56aP5bKh55yM56aP5bKh5biC5p2x5Yy65Y6f55Sw77yU5LiB55uu77yS77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1765159421943!5m2!1sja!2sjp"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</section>
+
+
+
+	</main>
+	<footer id="footer">
+		<div class="footer-inner">
+
+			<!-- 左エリア：ロゴ ＋ 住所など -->
+			<div class="footer-left">
+				<img src="img/logo.png" alt="GOATロゴ" class="footer-logo">
+				<p class="footer-company">就労継続支援A型事業所</p>
+				<div class="footer-sns">
+					<a href="#" class="sns-icon"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="https://www.instagram.com/syurou.goat/" class="sns-icon"><i
+							class="fa-brands fa-instagram"></i></a>
+
+					<a href="#" class="sns-icon"><i class="fa-brands fa-youtube"></i></a>
+					<a href="https://www.tiktok.com/@syurou.goat0901" class="sns-icon"><i
+							class="fa-brands fa-tiktok"></i></a>
+				</div>
+			</div>
+
+
+
+			<!-- 右エリア：メニュー -->
+			<div class="footer-right">
+				<ul class="footer-menu">
+					<li><a href="#">Top</a></li>
+					<li><a href="https://marais.co.jp/">GOAT</a></li>
+					<li><a href="index.html#services">サービス内容</a></li>
+					<li><a href="index.html#flow">Service Packages</a></li>
+					<li><a href="index.html#pricing">料金体系</a></li>
+					<li><a href="index.html#faq">FAQ</a></li>
+					<li><a href="index.html#contact">contact</a></li>
+					<li><a href="index.html#company">company</a></li>
+				</ul>
+
+
+
+				<div class="privacy">
+					<a href="#">プライバシー</a> ・ <a href="#">ポリシー</a>
+				</div>
+			</div>
+		</div>
+
+		<p class="copyright">© 2024 GOAT Inc.</p>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

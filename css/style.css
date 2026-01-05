@@ -161,7 +161,7 @@ header
 /* ▼ Swiper 基本 */
 .swiper-wrapper,
 .swiper-slide {
-  height: 100%;
+  height: 100vh;
 }
 
 .swiper-slide {

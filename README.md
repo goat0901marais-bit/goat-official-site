@@ -1,26 +1,7 @@
-# GOAT Official Website
+# 就労継続支援A型事業所 GOAT 公式サイト
 
-GOATの公式Webサイト用リポジトリです。  
-撮影・採寸・出品代行・梱包・保管・発送までを一気通貫で支援する  
-EC運営・物流サービスの紹介サイトを管理しています。
+marais.co.jp（福祉側）と EC向け物流サービスをまとめたサイト。
 
-## Overview
-本サイトは、GOATが提供するサービス内容、料金体系、会社情報、
-お問い合わせ導線を掲載した静的Webサイトです。
-
-## Built With
-- HTML
-- CSS
-- JavaScript
-
-## Directory Structure
-index.html  
-css/  
-js/  
-img/
-
-## Deployment
-This site can be deployed using GitHub Pages.
-
-## Notes
-本リポジトリ内の画像・文章の無断転載はご遠慮ください。
+- 編集は `pages/*.html`（各ページの本文）と `css/site.css` を直し、`python3 build.py` でトップ階層の HTML を書き出す
+- 共通ヘッダー・フッター・メタ情報は `build.py` の中
+- 【要確認】の黄色い印は、情報が入りしだい差し替える

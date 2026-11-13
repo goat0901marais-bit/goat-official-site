@@ -294,3 +294,4 @@ ul, ol { list-style: none; }
 .todo { background: #ffe9a8; outline: 2px dashed #d79a00; outline-offset: 2px; border-radius: 4px; padding: 0 4px; }
 
 .job-ph { margin: -32px -32px 24px; aspect-ratio: 16/9; border-radius: var(--radius-lg) var(--radius-lg) 0 0; background: var(--mist); display: grid; place-items: center; }
+.price-table .yen.same { font-family: var(--body); font-size: 14px; font-weight: 500; color: var(--ink-soft); }

@@ -233,6 +233,9 @@ ul, ol { list-style: none; }
 .price-table .plan small { display: block; font-family: var(--body); font-size: 13px; font-weight: 400; color: var(--ink-soft); margin-top: 4px; line-height: 1.6; }
 .price-table .yen { font-family: var(--display); font-size: 26px; font-weight: 900; white-space: nowrap; }
 .price-table .yen small { font-size: 14px; font-weight: 500; }
+.price-table .yen .tax { display: block; font-family: var(--body); font-size: 12px; font-weight: 400; color: var(--ink-soft); }
+.price-table td.yen:nth-child(4)::before { content: none; }
+@media (max-width: 760px) { .price-table td.yen:nth-child(3)::before { content: "1個あたり "; font-size: 12px; font-weight: 400; } .price-table td.yen:nth-child(4)::before { content: "月50個以上 "; font-size: 12px; font-weight: 400; } }
 .price-table .recommend { background: var(--sun-pale); }
 .price-table .tag { display: inline-block; font-size: 12px; background: var(--sun); border-radius: 999px; padding: 1px 10px; margin-bottom: 6px; font-family: var(--body); }
 .price-notes { margin-top: 20px; font-size: 14px; color: var(--ink-soft); display: grid; gap: 4px; }
@@ -254,6 +257,7 @@ ul, ol { list-style: none; }
 .cmp .diff { color: #b4520a; font-weight: 700; }
 .cmp-note { font-size: 13px; color: var(--ink-soft); margin-top: 10px; }
 @media (max-width: 860px) { .ship { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .cmp { font-size: 13px; } .cmp th, .cmp td { padding: 10px 6px; white-space: nowrap; } .cmp thead th { white-space: normal; } }
 
 /* ---------- forms ---------- */
 .form { display: grid; gap: 22px; max-width: 680px; }

@@ -11,16 +11,17 @@
     });
   }
 
-  // お問い合わせフォーム：送信先が決まるまではプレビュー表示のみ
-  var form = document.querySelector('form[data-preview]');
+  // お問い合わせフォーム：本番ドメイン以外（確認用ページ）では送信しない
+  var form = document.querySelector('.form');
   if (form) {
     var t = (location.hash || '').replace('#', '');
-    if (t) { var r = form.querySelector('input[name="type"][value="' + t + '"]'); if (r) r.checked = true; }
-    form.addEventListener('submit', function (e) {
+    if (t) { var r = form.querySelector('input[data-key="' + t + '"]'); if (r) r.checked = true; }
+    var live = /(^|\.)marais\.co\.jp$|github\.io$/.test(location.hostname);
+    if (!live) form.addEventListener('submit', function (e) {
       e.preventDefault();
       var msg = document.querySelector('.form-msg');
       if (!form.checkValidity()) { form.reportValidity(); return; }
-      msg.textContent = '確認用ページのため、まだ送信はされません。公開時に送信先（メール）を設定します。';
+      msg.textContent = '確認用ページのため送信されません。公開後のサイトでは r.nagai@marais.co.jp に届きます。';
       msg.classList.add('show');
       msg.scrollIntoView({ block: 'center' });
     });

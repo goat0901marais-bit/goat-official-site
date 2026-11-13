@@ -48,22 +48,26 @@
 
 <section class="sec">
   <div class="wrap contact-grid">
-    <form class="form" data-preview novalidate>
+    <form class="form" action="https://formsubmit.co/r.nagai@marais.co.jp" method="POST">
+      <input type="hidden" name="_subject" value="【GOAT】ホームページからのお問い合わせ">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://marais.co.jp/thanks.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="field">
         <label>ご用件<span class="req">必須</span></label>
         <div class="radios" role="radiogroup">
-          <label><input type="radio" name="type" value="work" required>見学・利用の相談</label>
-          <label><input type="radio" name="type" value="ec">物流サービスの見積もり・相談</label>
-          <label><input type="radio" name="type" value="other">その他</label>
+          <label><input type="radio" name="ご用件" data-key="work" value="見学・利用の相談" required>見学・利用の相談</label>
+          <label><input type="radio" name="ご用件" data-key="ec" value="物流サービスの見積もり・相談">物流サービスの見積もり・相談</label>
+          <label><input type="radio" name="ご用件" data-key="other" value="その他">その他</label>
         </div>
       </div>
       <div class="field">
         <label for="f-name">お名前<span class="req">必須</span></label>
-        <input id="f-name" name="name" autocomplete="name" required>
+        <input id="f-name" name="お名前" autocomplete="name" required>
       </div>
       <div class="field">
         <label for="f-company">会社名・ショップ名<span class="opt">任意</span></label>
-        <input id="f-company" name="company" autocomplete="organization">
+        <input id="f-company" name="会社名・ショップ名" autocomplete="organization">
       </div>
       <div class="field">
         <label for="f-mail">メールアドレス<span class="req">必須</span></label>
@@ -71,11 +75,11 @@
       </div>
       <div class="field">
         <label for="f-tel">電話番号<span class="opt">任意</span></label>
-        <input id="f-tel" name="tel" type="tel" autocomplete="tel">
+        <input id="f-tel" name="電話番号" type="tel" autocomplete="tel">
       </div>
       <div class="field">
         <label for="f-body">お問い合わせ内容<span class="opt">任意</span></label>
-        <textarea id="f-body" name="message" placeholder="見学のご希望日、商品の種類と数など"></textarea>
+        <textarea id="f-body" name="お問い合わせ内容" placeholder="見学のご希望日、商品の種類と数など"></textarea>
       </div>
       <label class="consent"><input type="checkbox" required><span><a href="privacy.html">プライバシーポリシー</a>に同意する</span></label>
       <div><button class="btn btn-sun" type="submit" style="min-width:240px">送信する</button></div>
@@ -84,7 +88,7 @@
     <aside class="contact-side">
       <h2 style="font-family:var(--display);font-size:20px">お電話でのお問い合わせ</h2>
       <a class="tel" href="tel:0922142786">092-214-2786</a>
-      <p style="font-size:14px;color:var(--ink-soft)">受付時間 <span class="todo">【要確認】</span></p>
+      <p style="font-size:14px;color:var(--ink-soft)">受付時間 月〜金 9:00〜18:00</p>
       <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
       <p style="font-size:14px">〒812-0063<br>福岡県福岡市東区原田4-25-1<br>就労継続支援A型事業所 GOAT</p>
     </aside>

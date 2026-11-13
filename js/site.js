@@ -16,6 +16,8 @@
   if (form) {
     var t = (location.hash || '').replace('#', '');
     if (t) { var r = form.querySelector('input[data-key="' + t + '"]'); if (r) r.checked = true; }
+    var next = form.querySelector('input[name="_next"]');
+    if (next) next.value = new URL('thanks.html', location.href).href;
     var live = /(^|\.)marais\.co\.jp$|github\.io$/.test(location.hostname);
     if (!live) form.addEventListener('submit', function (e) {
       e.preventDefault();

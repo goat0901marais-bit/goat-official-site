@@ -29,7 +29,9 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:image" content="{site}img/ogp.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="google-site-verification" content="R8UAGRc12L2dRGkrX6KynYFcTC_PrOb49aAnZQQxa30">
+<link rel="canonical" href="{url}">
 <link rel="icon" href="img/favicon.png">
+{jsonld}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
@@ -72,7 +74,7 @@ FOOT = """</main>
       <div>
         <h3>企業の方へ</h3>
         <ul>
-          <li><a href="ec.html">EC向け物流サービス</a></li>
+          <li><a href="ec.html">物販代行・EC代行</a></li>
           <li><a href="ec.html#price">料金</a></li>
           <li><a href="ec.html#flow">ご利用の流れ</a></li>
         </ul>
@@ -96,6 +98,12 @@ FOOT = """</main>
 """
 
 
+JSONLD = {
+    "index.html": '<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "就労継続支援A型事業所 GOAT", "alternateName": "GOAT", "url": "https://marais.co.jp/", "logo": "https://marais.co.jp/img/logo.png", "image": "https://marais.co.jp/img/ogp.jpg", "telephone": "+81-92-214-2786", "address": {"@type": "PostalAddress", "postalCode": "812-0063", "addressRegion": "福岡県", "addressLocality": "福岡市東区", "streetAddress": "原田4-25-1", "addressCountry": "JP"}, "openingHours": "Mo-Fr 09:00-18:00", "parentOrganization": {"@type": "Organization", "name": "Marais株式会社"}, "sameAs": ["https://www.instagram.com/syurou.goat/", "https://www.tiktok.com/@syurou.goat0901"]}</script>',
+    "ec.html": '<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "物販代行・EC代行（撮影・出品・梱包・発送代行）", "serviceType": "物販代行", "areaServed": "JP", "url": "https://marais.co.jp/ec.html", "provider": {"@type": "LocalBusiness", "name": "就労継続支援A型事業所 GOAT", "telephone": "+81-92-214-2786", "address": {"@type": "PostalAddress", "addressRegion": "福岡県", "addressLocality": "福岡市東区", "streetAddress": "原田4-25-1"}}, "offers": [{"@type": "Offer", "name": "お任せフルパック", "price": "1000", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "撮影パック", "price": "600", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "撮影＋発送代行プラン", "price": "900", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "保管＋発送プラン", "price": "500", "priceCurrency": "JPY"}, {"@type": "Offer", "name": "発送のみ", "price": "300", "priceCurrency": "JPY"}]}</script>',
+}
+
+
 def render(src: pathlib.Path):
     text = src.read_text(encoding="utf-8")
     m = re.match(r"<!--\s*title:(.*?)\n\s*desc:(.*?)\n\s*current:(.*?)\s*-->\n", text, re.S)
@@ -106,7 +114,8 @@ def render(src: pathlib.Path):
         for href, label, key in NAV
     )
     url = SITE_URL + ("" if src.name == "index.html" else src.name)
-    out = HEAD.format(title=title, desc=desc, url=url, site=SITE_URL, nav=nav) + body + FOOT
+    jsonld = JSONLD.get(src.name, "")
+    out = HEAD.format(title=title, desc=desc, url=url, site=SITE_URL, nav=nav, jsonld=jsonld) + body + FOOT
     (ROOT / src.name).write_text(out, encoding="utf-8")
     print("built", src.name)
 
